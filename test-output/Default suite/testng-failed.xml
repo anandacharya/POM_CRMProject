@@ -5,8 +5,13 @@
     <classes>
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
+          <include name="verifyContactPageLabel"/>
+          <include name="endReport"/>
+          <include name="selectMultipleName"/>
           <include name="setup"/>
+          <include name="setExtnt"/>
           <include name="tearDown"/>
+          <include name="selectSingleName"/>
           <include name="validateCreateNewContact"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->

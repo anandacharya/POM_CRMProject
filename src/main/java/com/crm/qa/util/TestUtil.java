@@ -24,8 +24,8 @@ import com.crm.qa.base.TestBase;
  */
 public class TestUtil extends TestBase{
 
-	public static long page_load_timeout = 20;
-	public static long implicit_wait = 10;
+	public static long page_load_timeout = 30;
+	public static long implicit_wait = 30;
 
 	public static String testdata_sheet_path = System.getProperty("user.dir")+"/src/main/java/com/crm/qa/testdata/FreeCRMTestData.xlsx";
 	
@@ -66,6 +66,7 @@ public class TestUtil extends TestBase{
 	}
 	
 	public static void takeScreenshotAtEndOfTest() throws IOException{
+		
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 /*		if (osName.startsWith("Mac")) {

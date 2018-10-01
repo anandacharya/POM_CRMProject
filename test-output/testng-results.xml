@@ -1,207 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="0" total="12" passed="7">
+<testng-results skipped="0" failed="2" ignored="4" total="16" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="FREE CRM Application Test Automation Test Suite" duration-ms="176740" started-at="2018-09-29T12:15:23Z" finished-at="2018-09-29T12:18:20Z">
+  <suite name="FREE CRM Application Test Automation Test Suite" duration-ms="339142" started-at="2018-10-01T04:20:52Z" finished-at="2018-10-01T04:26:31Z">
     <groups>
     </groups>
-    <test name="Free CRM App Test Cases" duration-ms="176740" started-at="2018-09-29T12:15:23Z" finished-at="2018-09-29T12:18:20Z">
+    <test name="Free CRM App Test Cases" duration-ms="339142" started-at="2018-10-01T04:20:52Z" finished-at="2018-10-01T04:26:31Z">
       <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="setUp" is-config="true" duration-ms="23123" started-at="2018-09-29T22:15:41Z" finished-at="2018-09-29T22:16:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="setUp" is-config="true" duration-ms="23876" started-at="2018-10-01T14:21:06Z" finished-at="2018-10-01T14:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="verifyHomePageTitleTest" duration-ms="24" started-at="2018-09-29T22:16:04Z" finished-at="2018-09-29T22:16:04Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="verifyHomePageTitleTest" duration-ms="21" started-at="2018-10-01T14:21:30Z" finished-at="2018-10-01T14:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="tearDown" is-config="true" duration-ms="800" started-at="2018-09-29T22:16:04Z" finished-at="2018-09-29T22:16:05Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="tearDown" is-config="true" duration-ms="800" started-at="2018-10-01T14:21:30Z" finished-at="2018-10-01T14:21:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitleTest status=SUCCESS method=HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@67784306] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="setUp" is-config="true" duration-ms="23724" started-at="2018-09-29T22:16:37Z" finished-at="2018-09-29T22:17:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="setUp" is-config="true" duration-ms="19551" started-at="2018-10-01T14:23:20Z" finished-at="2018-10-01T14:23:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="verifyUserNameTest" duration-ms="431" started-at="2018-09-29T22:17:01Z" finished-at="2018-09-29T22:17:01Z">
+        <test-method status="FAIL" signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="verifyUserNameTest" duration-ms="30674" started-at="2018-10-01T14:23:39Z" finished-at="2018-10-01T14:24:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'User: Anand Acharya')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ANANDA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50750}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 9a8d473200be4156a512577a4541213a
+*** Element info: {Using=xpath, value=//td[contains(text(),'User: Anand Acharya')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'User: Anand Acharya')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ANANDA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50750}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 9a8d473200be4156a512577a4541213a
+*** Element info: {Using=xpath, value=//td[contains(text(),'User: Anand Acharya')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at com.crm.qa.pages.HomePage.verifyCorrectUserName(HomePage.java:47)
+	at com.crm.qa.testcases.HomePageTest.verifyUserNameTest(HomePageTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="tearDown" is-config="true" duration-ms="784" started-at="2018-09-29T22:17:01Z" finished-at="2018-09-29T22:17:02Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="tearDown" is-config="true" duration-ms="1719" started-at="2018-10-01T14:24:10Z" finished-at="2018-10-01T14:24:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserNameTest status=FAILURE method=HomePageTest.verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@67784306] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="setUp" is-config="true" duration-ms="20760" started-at="2018-09-29T22:17:51Z" finished-at="2018-09-29T22:18:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="setUp" is-config="true" duration-ms="20970" started-at="2018-10-01T14:24:55Z" finished-at="2018-10-01T14:25:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="verifyContactsLinkTest" duration-ms="2859" started-at="2018-09-29T22:18:12Z" finished-at="2018-09-29T22:18:15Z">
+        <test-method status="PASS" signature="verifyContactsLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="verifyContactsLinkTest" duration-ms="1890" started-at="2018-10-01T14:25:16Z" finished-at="2018-10-01T14:25:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cf777e8]" name="tearDown" is-config="true" duration-ms="812" started-at="2018-09-29T22:18:15Z" finished-at="2018-09-29T22:18:16Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.HomePageTest@67784306]" name="tearDown" is-config="true" duration-ms="895" started-at="2018-10-01T14:25:17Z" finished-at="2018-10-01T14:25:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactsLinkTest status=SUCCESS method=HomePageTest.verifyContactsLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@67784306] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="19563" started-at="2018-09-29T22:16:05Z" finished-at="2018-09-29T22:16:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="23350" started-at="2018-10-01T14:21:33Z" finished-at="2018-10-01T14:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyContactPageLabel()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="verifyContactPageLabel" duration-ms="133" started-at="2018-09-29T22:16:24Z" finished-at="2018-09-29T22:16:25Z">
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="validateCreateNewContact" duration-ms="9084" started-at="2018-10-01T14:21:57Z" data-provider="getCRMTestData" finished-at="2018-10-01T14:22:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Peter]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="830" started-at="2018-10-01T14:22:06Z" finished-at="2018-10-01T14:22:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContact status=SUCCESS method=ContactsPageTest.validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="22408" started-at="2018-10-01T14:22:07Z" finished-at="2018-10-01T14:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="validateCreateNewContact" duration-ms="8147" started-at="2018-10-01T14:22:29Z" data-provider="getCRMTestData" finished-at="2018-10-01T14:22:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="807" started-at="2018-10-01T14:22:37Z" finished-at="2018-10-01T14:22:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContact status=SUCCESS method=ContactsPageTest.validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="21871" started-at="2018-10-01T14:22:38Z" finished-at="2018-10-01T14:23:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="validateCreateNewContact" duration-ms="8136" started-at="2018-10-01T14:23:00Z" data-provider="getCRMTestData" finished-at="2018-10-01T14:23:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mrs.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mukta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ebay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="817" started-at="2018-10-01T14:23:08Z" finished-at="2018-10-01T14:23:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContact status=SUCCESS method=ContactsPageTest.validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="20692" started-at="2018-10-01T14:24:12Z" finished-at="2018-10-01T14:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyContactPageLabel()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="verifyContactPageLabel" duration-ms="149" started-at="2018-10-01T14:24:32Z" finished-at="2018-10-01T14:24:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactPageLabel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="tearDown" is-config="true" duration-ms="800" started-at="2018-09-29T22:16:25Z" finished-at="2018-09-29T22:16:25Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="800" started-at="2018-10-01T14:24:33Z" finished-at="2018-10-01T14:24:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactPageLabel status=SUCCESS method=ContactsPageTest.verifyContactPageLabel()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="12236" started-at="2018-09-29T22:17:02Z" finished-at="2018-09-29T22:17:14Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="20656" started-at="2018-10-01T14:25:18Z" finished-at="2018-10-01T14:25:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="selectSingleName()[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="selectSingleName" duration-ms="0" started-at="2018-09-29T22:17:14Z" finished-at="2018-09-29T22:17:14Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="selectSingleName()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="selectSingleName" duration-ms="30881" started-at="2018-10-01T14:25:39Z" finished-at="2018-10-01T14:26:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='testa 123']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ANANDA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50987}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 0e460d0c24e92b3613494bb13c514d78
+*** Element info: {Using=xpath, value=//a[text()='testa 123']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='testa 123']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ANANDA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50987}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 0e460d0c24e92b3613494bb13c514d78
+*** Element info: {Using=xpath, value=//a[text()='testa 123']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:46)
+	at com.crm.qa.testcases.ContactsPageTest.selectSingleName(ContactsPageTest.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -223,404 +371,107 @@ Session ID: 3037a7682888c34be37658f8852fb0d7
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSingleName -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-29T22:18:16Z" finished-at="2018-09-29T22:18:16Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="1205" started-at="2018-10-01T14:26:10Z" finished-at="2018-10-01T14:26:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectSingleName status=FAILURE method=ContactsPageTest.selectSingleName()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="setup" is-config="true" duration-ms="17833" started-at="2018-10-01T14:26:11Z" finished-at="2018-10-01T14:26:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="selectMultipleName()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="selectMultipleName" duration-ms="0" started-at="2018-09-29T22:18:16Z" finished-at="2018-09-29T22:18:16Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="selectMultipleName()[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="selectMultipleName" duration-ms="512" started-at="2018-10-01T14:26:29Z" finished-at="2018-10-01T14:26:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMultipleName -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-29T22:18:20Z" finished-at="2018-09-29T22:18:20Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@335eadca]" name="tearDown" is-config="true" duration-ms="796" started-at="2018-10-01T14:26:29Z" finished-at="2018-10-01T14:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectMultipleName status=SUCCESS method=ContactsPageTest.selectMultipleName()[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="validateCreateNewContact" duration-ms="0" started-at="2018-09-29T22:18:20Z" data-provider="getCRMTestData" finished-at="2018-09-29T22:18:20Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-29T22:18:20Z" finished-at="2018-09-29T22:18:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="validateCreateNewContact" duration-ms="0" started-at="2018-09-29T22:18:20Z" data-provider="getCRMTestData" finished-at="2018-09-29T22:18:20Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-29T22:18:20Z" finished-at="2018-09-29T22:18:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@2f686d1f]" name="validateCreateNewContact" duration-ms="0" started-at="2018-09-29T22:18:20Z" data-provider="getCRMTestData" finished-at="2018-09-29T22:18:20Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1182, 117). Other element would receive the click: <div id="preloader" style="opacity: 0.00217778;">...</div>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DESKTOP-6QB07EQ', ip: '192.168.93.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56059}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\ANANDA~1\AppData\Local\Temp\scoped_dir10288_14767}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3037a7682888c34be37658f8852fb0d7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
-	at com.crm.qa.testcases.ContactsPageTest.setup(ContactsPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
+        </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="setup" is-config="true" duration-ms="16981" started-at="2018-09-29T22:15:23Z" finished-at="2018-09-29T22:15:40Z">
+        <test-method status="PASS" signature="setExtnt()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="setExtnt" is-config="true" duration-ms="242" started-at="2018-10-01T14:20:52Z" finished-at="2018-10-01T14:20:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtnt -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="setup" is-config="true" duration-ms="12978" started-at="2018-10-01T14:20:53Z" finished-at="2018-10-01T14:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitle()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="loginPageTitle" duration-ms="88" started-at="2018-09-29T22:15:40Z" finished-at="2018-09-29T22:15:40Z">
+        <test-method status="PASS" signature="loginPageTitle()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="loginPageTitle" duration-ms="107" started-at="2018-10-01T14:21:06Z" finished-at="2018-10-01T14:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="776" started-at="2018-09-29T22:15:40Z" finished-at="2018-09-29T22:15:41Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="tearDown" is-config="true" duration-ms="809" started-at="2018-10-01T14:21:06Z" finished-at="2018-10-01T14:21:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTitle status=SUCCESS method=LoginPageTest.loginPageTitle()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="setup" is-config="true" duration-ms="10277" started-at="2018-09-29T22:16:25Z" finished-at="2018-09-29T22:16:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="setup" is-config="true" duration-ms="9903" started-at="2018-10-01T14:23:09Z" finished-at="2018-10-01T14:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="crmLogoImageTest" duration-ms="273" started-at="2018-09-29T22:16:36Z" finished-at="2018-09-29T22:16:36Z">
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="crmLogoImageTest" duration-ms="251" started-at="2018-10-01T14:23:19Z" finished-at="2018-10-01T14:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="816" started-at="2018-09-29T22:16:36Z" finished-at="2018-09-29T22:16:37Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="tearDown" is-config="true" duration-ms="791" started-at="2018-10-01T14:23:19Z" finished-at="2018-10-01T14:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=crmLogoImageTest status=SUCCESS method=LoginPageTest.crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="setup" is-config="true" duration-ms="23119" started-at="2018-09-29T22:17:14Z" finished-at="2018-09-29T22:17:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="setup" is-config="true" duration-ms="9031" started-at="2018-10-01T14:24:33Z" finished-at="2018-10-01T14:24:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="loginTest" duration-ms="13240" started-at="2018-09-29T22:17:37Z" finished-at="2018-09-29T22:17:50Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="loginTest" duration-ms="11265" started-at="2018-10-01T14:24:42Z" finished-at="2018-10-01T14:24:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="928" started-at="2018-09-29T22:17:50Z" finished-at="2018-09-29T22:17:51Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="tearDown" is-config="true" duration-ms="819" started-at="2018-10-01T14:24:54Z" finished-at="2018-10-01T14:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@185d8b6]" name="endReport" is-config="true" duration-ms="1193" started-at="2018-10-01T14:26:30Z" finished-at="2018-10-01T14:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </test> <!-- Free CRM App Test Cases -->
   </suite> <!-- FREE CRM Application Test Automation Test Suite -->

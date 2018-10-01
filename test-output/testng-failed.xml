@@ -6,13 +6,22 @@
   </listeners>
   <test name="Free CRM App Test Cases(failed)">
     <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="verifyUserNameTest"/>
+          <include name="setExtnt"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
-          <include name="selectMultipleName"/>
+          <include name="endReport"/>
           <include name="setup"/>
+          <include name="setExtnt"/>
           <include name="tearDown"/>
           <include name="selectSingleName"/>
-          <include name="validateCreateNewContact"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
     </classes>
